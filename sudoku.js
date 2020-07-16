@@ -1,3 +1,6 @@
+// Copyright https://www.RedDragonWebDesign.com/
+// Permission required to use or copy code. All rights reserved.
+
 `use strict`;
 
 class SudokuBoard {
@@ -1234,7 +1237,7 @@ window.addEventListener(`DOMContentLoaded`, (e) => {
 		const t2 = performance.now();
 		// TODO: display recursionTracker stuff like # of solutions, strings of the solutions, etc.
 		document.querySelector(`#algorithm span`).innerHTML = (t2 - t1).toFixed(1);
-		algorithm.style.display = `block`;
+		algorithm.style.display = `inline-block`;
 		consoleBox.children[0].innerHTML = recursionTracker.getInfoString();
 		consoleBox.style.display = `block`;
 		if ( recursionTracker.getSolutionCount() === 1 ) {
@@ -1293,7 +1296,7 @@ window.addEventListener(`DOMContentLoaded`, (e) => {
 		game1.makeEasyPuzzle();
 		const t2 = performance.now();
 		document.querySelector(`#algorithm span`).innerHTML = (t2 - t1).toFixed(1);
-		algorithm.style.display = `block`;
+		algorithm.style.display = `inline-block`;
 		SudokuDOM.displayBoard(game1, sudokuSquares, stringBox, sudokuWikiLink);
 		puzzlePicker.selectedIndex = CUSTOM_PUZZLE_SELECTEDINDEX;
 	});
@@ -1304,7 +1307,7 @@ window.addEventListener(`DOMContentLoaded`, (e) => {
 		game1.getLegalMovesForSquare(1,4);
 		const t2 = performance.now();
 		document.querySelector(`#algorithm span`).innerHTML = (t2 - t1).toFixed(1);
-		algorithm.style.display = `block`;
+		algorithm.style.display = `inline-block`;
 	});
 	
 	newButton.dispatchEvent(new Event(`click`));

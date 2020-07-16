@@ -6,7 +6,7 @@ a:visited {color:yellow;}
 
 #fireworks {background-color:transparent; height:100vh; width:100vw; position:absolute; top:0; left:0; /* allow click thru */ pointer-events:none;}
 
-article h1 {margin:0 0 0.5em 0;}
+h1 {margin:0 0 0.5em 0;}
 
 #string-box {width:610px;}
 #algorithm {display:none;}

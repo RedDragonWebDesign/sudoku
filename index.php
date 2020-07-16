@@ -3,7 +3,7 @@
 <html lang="en-us">
 
 <head>
-	<title>Titan Coding Projects</title>
+	<title>Sudoku - Red Dragon Web Design</title>
 	<link rel="stylesheet" href="sudoku.css" />
 	<script src="sudoku.js"></script>
 </head>
@@ -22,6 +22,9 @@
 	<button id="restart" class="done" title="Clear user-entered solutions. Reset the puzzle to its original import state.">Restart</button>
 	<button id="propagate">Propagate</button>
 	<!--<button id="solve" class="done">Solve Logically</button>-->
+	<span id="algorithm">
+		<span></span> ms
+	</span>
 </p>
 
 <p>
@@ -189,11 +192,11 @@
 </p>
 
 <p>
-	Or solve this using <a id="sudoku-wiki-link">Sudoku Wiki Solver</a>
+	See the logical solving steps using the <a id="sudoku-wiki-link">Sudoku Wiki Solver</a>
 </p>
 
-<p id="algorithm">
-	<span></span> ms
+<p>
+	Want to report a bug or request a feature? <a href="https://github.com/GeneralKenobi1/Sudoku/issues">Create an issue</a> on our GitHub.
 </p>
 
 <p id="console">
