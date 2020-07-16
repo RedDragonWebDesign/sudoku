@@ -1,0 +1,25 @@
+body {font-family:sans-serif; background-color:#1E1E1E; color:white; margin:0; padding: 1em;}
+p {margin-block-start:0; margin-block-end:0.5em;}
+a {color:yellow;}
+a:hover {color:orange;}
+a:visited {color:yellow;}
+
+#fireworks {background-color:transparent; height:100vh; width:100vw; position:absolute; top:0; left:0; /* allow click thru */ pointer-events:none;}
+
+article h1 {margin:0 0 0.5em 0;}
+
+#string-box {width:610px;}
+#algorithm {display:none;}
+#console {display:none;}
+#console textarea {width:85ch; height:8em;}
+
+.invalid {background-color:red;}
+.imported-square {background-color:lightgray;}
+.hint {background-color:limegreen;}
+
+#sudoku {border:4px solid black; border-collapse: collapse; margin-bottom:0.5em;}
+#sudoku tr {padding:0;}
+#sudoku td {padding:0; border:2px solid black; width:35px; height:35px;}
+#sudoku input {width:35px; height:35px; border:0; font-size:25pt; text-align:center; padding:0; color:black;}
+#sudoku .thick-right {border-right:4px solid black;}
+#sudoku .thick-bottom {border-bottom:4px solid black;}
