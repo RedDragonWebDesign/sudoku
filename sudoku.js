@@ -707,6 +707,11 @@ class SudokuBoard {
 					}
 				}
 				
+				// This line is super important. I didn't have it and the solver was slow as molasses until I figured this out.
+				// We should find ONE blank square, find a legal move, then make a recursive solve call using the new board.
+				// The tree should be expanding DOWNWARDS, not SIDEWAYS.
+				// This line will prune all the sideways calculations except for trying legal moves in one empty square.
+				// Find that ONE blank square, try 1-9, then get out.
 				return recursionTracker;
 			}
 		}
@@ -840,6 +845,7 @@ class SudokuBoard {
 	
 	// TODO: rename
 	// Credit to harold at codereview.stackexchange.com for this code.
+	// https://codereview.stackexchange.com/questions/239935/javascript-sudoku-recursive-solver
 	// By taking a bitwise approach, it sped up the solve routine considerably.
 	propagate() {
 		// For each row, column and block,
