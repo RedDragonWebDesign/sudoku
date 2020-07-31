@@ -1192,10 +1192,10 @@ window.addEventListener(`DOMContentLoaded`, (e) => {
 	const sudokuSquares = Helper.createArray(9,9);
 	const CUSTOM_PUZZLE_SELECTEDINDEX = 1;
 	
-	// Store all the Sudoku square <input type=`text`> elements in variables for quick accessing
+	let sudokuDiv = document.getElementById(`sudoku`);
 	for ( let row = 0; row < 9; row++ ) {
 		for ( let col = 0; col < 9; col++ ) {
-			sudokuSquares[row][col] = document.getElementById(`sudoku`).rows[row].cells[col].children[0];
+			sudokuSquares[row][col] = sudokuDiv.rows[row].cells[col].children[0];
 		}
 	}
 	
